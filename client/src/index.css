@@ -1,0 +1,330 @@
+/* Fundo da tela */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: gray; /* Cor de fundo suave (cinza claro) */
+    color: #333; /* Cor padrão do texto */
+  }
+  
+  /* Estilo geral da navbar */
+  .navbar-container {
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Estilo do menu */
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    display: inline-block;
+  }
+  
+  .navbar-link {
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .navbar-menu {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+
+
+
+  /* Container do formulário de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh; /* Ocupa a altura total da tela */
+    padding: 20px;
+  }
+  
+  /* Formulário de login */
+  .login-form {
+    width: 100%;
+    max-width: 400px; /* Largura máxima do formulário */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  /* Título do formulário */
+  .login-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Grupo de formulário */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .form-input {
+    width: 90%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #00bcd4;
+    outline: none;
+  }
+  
+  /* Botão de login */
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #00bcd4;
+  }
+  
+  /* Links de login */
+  .login-links {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .login-link-item {
+    margin-top: 10px;
+  }
+  
+  .login-link {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .login-link:hover {
+    color: #007a99;
+  }
+  
+
+
+
+  /* Container do formulário de cadastro */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh; /* Ocupa a altura total da tela */
+    padding: 20px;
+  }
+  
+  /* Formulário de cadastro */
+  .register-form {
+    width: 100%;
+    max-width: 400px; /* Largura máxima do formulário */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  /* Título do formulário */
+  .register-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Grupo de formulário */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .form-input, .form-select {
+    width: 90%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus, .form-select:focus {
+    border-color: #00bcd4;
+    outline: none;
+  }
+  
+  /* Dropdown select */
+  .form-select {
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Mensagem de erro */
+  .form-error {
+    font-size: 0.9rem;
+    color: #d9534f;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Botão de cadastro */
+  .btn-register {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-register:hover {
+    background-color: #00bcd4;
+  }
+  
+
+
+/* Fundo geral da tela */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0; /* Cinza claro */
+  }
+  
+  /* Container de produtos */
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #e0e0e0;
+  }
+  
+  /* Card de produto */
+  .product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Imagem do produto */
+  .product-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Título do produto */
+  .product-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Preço do produto */
+  .product-price {
+    font-size: 1rem;
+    color: #00bcd4;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Botão de compra */
+  .product-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-button:hover {
+    background-color: #00bcd4;
+  }
+  

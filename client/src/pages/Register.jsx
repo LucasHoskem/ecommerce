@@ -28,14 +28,16 @@ const Register = () => {
 
   return (
     <>
-      <nav className='navbar'>
-        <a href="/" className='navbar-logo'>BEM-VINDO</a>
-        <ul className="navbar-menu">
-          <li className='navbar-item'>
-            <a href="/login" className='navbar-link'>Login</a>
-          </li>
-        </ul>
-      </nav>
+      <div className='navbar-container'>
+        <nav className='navbar'>
+          <a href="/" className='navbar-logo'>BEM-VINDO</a>
+          <ul className="navbar-menu">
+            <li className='navbar-item'>
+              <a href="/login" className='navbar-link'>Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <div className='register-container'>
         <form className='register-form' onSubmit={handleRegister}>

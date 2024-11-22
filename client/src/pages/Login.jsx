@@ -37,9 +37,11 @@ const Login = () => {
 
       
 
-      <nav className='navbar'>
-        <a href="/" className='navbar-logo'>BEM-VINDO</a>
-      </nav>
+      <div className='navbar-container'>
+        <nav className='navbar'>
+          <a href="/" className='navbar-logo'>BEM-VINDO</a>
+        </nav>
+      </div>
       <div className='login-container'>
         <form onSubmit={handleLogin} className='login-form'>
           <h3 className='login-title'>Login</h3>
