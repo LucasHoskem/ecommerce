@@ -9,13 +9,18 @@ function Checkout({ cart, clearCart }) {
     };
 
     return (
-        <div>
-            <h2>Checkout</h2>
-            <p>Total: ${total.toFixed(2)}</p>
-            <button onClick={handleCheckout} disabled={cart.length === 0}>
+        <div className="checkout-container">
+            <h2 className="checkout-title">Checkout</h2>
+            <p className="checkout-total">Total: R$ {total.toFixed(2)}</p>
+            <button
+                className="checkout-button"
+                onClick={handleCheckout}
+                disabled={cart.length === 0}
+            >
                 Finalizar Compra
             </button>
         </div>
+
     );
 }
 

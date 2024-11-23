@@ -33,13 +33,13 @@ function AppCarrinho() {
     return (
         
         <div>
-            <div className='navbar1'>
-                <nav>
+            <div className='navbar-container'>
+                <nav className='navbar'>
                     <a href="/inicio">BEM-VINDO</a>
-                    <ul className="list">
-                        <li><a href="/profile">Perfil</a></li>
-                        <li><a href="/carrinho">Carrinho</a></li>
-                        <li><a href="/catalogo">Catalogo</a></li>
+                    <ul className="navbar-menu">
+                        <li className='navbar-item'><a href="/profile">Perfil</a></li>
+                        <li className='navbar-item'><a href="/carrinho">Carrinho</a></li>
+                        <li className='navbar-item'><a href="/catalogo">Catalogo</a></li>
                     </ul>
                     
                 </nav>
@@ -50,8 +50,13 @@ function AppCarrinho() {
                     <Product key={product.id} product={product} addToCart={addToCart} />
                 ))}
             </div>
-            <Cart cart={cart} removeFromCart={removeFromCart} />
-            <Checkout cart={cart} clearCart={clearCart} />
+            <div className="cart-container">
+                <Cart cart={cart} removeFromCart={removeFromCart} />
+            </div>
+            <div className="checkout-container">
+                <Checkout cart={cart} clearCart={clearCart} />
+            </div>
+
         </div>
     );
 }

@@ -2,49 +2,45 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Admin = () => {
-  const [menuItems, setMenuItems] = useState([]);
+  const [userData, setUserData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/menu')
+    axios.get('http://localhost:5000/api/auth')
       .then(response => {
-        setMenuItems(response.data);
+        console.log('Dados recebidos:', response.data); // Log para depurar
+        setUserData(response.data);
+        setLoading(false);
       })
       .catch(error => {
-        console.error('Erro ao buscar o menu!', error);
+        console.error('Erro ao buscar usuários:', error);
+        setError('Não foi possível carregar os usuários.');
+        setLoading(false);
       });
   }, []);
 
-  const handleDelete = (id) => {
-    axios.delete(`http://localhost:5000/api/menu/${id}`)
-      .then(() => {
-        setMenuItems(menuItems.filter(item => item.id !== id));
-      })
-      .catch(error => {
-        console.error('Erro ao deletar item do menu!', error);
-      });
-  };
+  if (loading) return <p>Carregando Usuários...</p>;
+  if (error) return <p>{error}</p>;
 
   return (
-
-    <>
     <div className='panel'>
       <h1>Painel de Administração</h1>
       <h2>Gerenciar Usuários</h2>
-      {menuItems.length > 0 ? (
-        menuItems.map(item => (
-          <div key={item.id}>
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <button onClick={() => handleDelete(item.id)}>Deletar</button>
-            <button>Editar</button>
+      {userData && userData.length > 0 ? (
+        userData.map(user => (
+          <div key={user.id}>
+            <h3>{user.username}</h3>
+            <p>{user.email}</p>
+            <button onClick={() => console.log('Deletar', user.id)}>Deletar</button>
+            <button onClick={() => console.log('Editar', user)}>Editar</button>
           </div>
         ))
       ) : (
-        <p>Carregando Usuários...</p>
+        <p>Nenhum usuário encontrado.</p>
       )}
-      <button>Adicionar Usuários</button>
+      <button onClick={() => console.log('Adicionar usuário')}>Adicionar Usuários</button>
     </div>
-    </>
   );
 };
 
