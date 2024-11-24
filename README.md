@@ -37,3 +37,6 @@ git clone https://github.com/LucasHoskem/ecommerce.git
 
 
 6. Professora, fiz TUDO o que eu pude, te juro, tentei, errei, acertei errando, distentei, é muito difícil. Juro que até pesquisei no mdn, mas não consegui terminar o projeto, então deixei do jeito que está pois o meu mental não aguenta mais, me dá uma moral na nota por favor.
+
+7. link vercel
+https://ecommerce-z4y4.vercel.app
