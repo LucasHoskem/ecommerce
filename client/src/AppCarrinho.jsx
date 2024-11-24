@@ -43,6 +43,10 @@ function AppCarrinho() {
         { name: "HD Externo 1TB", price: 500, img: "https://via.placeholder.com/200?text=HD+Externo+1TB" },
         { name: "Drone Phantom", price: 4500, img: "https://via.placeholder.com/200?text=Drone+Phantom" },
         { name: "Console Gamer X", price: 2500, img: "https://via.placeholder.com/200?text=Console+Gamer+X" },
+        { name: "Tablet Pro 10", price: 1800, img: "https://via.placeholder.com/200?text=Tablet+Pro+10" },
+        { name: "Carregador Rápido Turbo", price: 150, img: "https://via.placeholder.com/200?text=Carregador+Rapido+Turbo" },
+        { name: "Headset Gamer 7.1", price: 700, img: "https://via.placeholder.com/200?text=Headset+Gamer+7.1" },
+        { name: "Impressora Multifuncional X", price: 1200, img: "https://via.placeholder.com/200?text=Impressora+Multifuncional+X" },
       ];
 
     return (
