@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import HomeLogged from './pages/HomeLogged';
-import Menu from './pages/Menu';
 import Profile from './pages/Profile';
 import Admin from './pages/Admin';
 import Login from './pages/Login';
