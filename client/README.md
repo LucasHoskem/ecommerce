@@ -1,8 +1,39 @@
-# React + Vite
+1. # Projeto Ecommerce
+Este é um projeto de um ecommerce feito para a matéria de Framework
+Por: Lucas Cordeiro Hoskem e Pedro Gonçalves 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. Descrição
+"Este projeto é uma aplicação web desenvolvida em React que permite se cadastrar e logar na aplicação, além de ter um catálogo de produtos e um carrinho de compras"
 
-Currently, two official plugins are available:
+3. Recursos/Funcionalidades
+Cadastro.
+Login.
+Navegação.
+Filtro de produtos por nome, preço, produtos disponíveis ou não e outros.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+4. Tecnologias Utilizadas
+React
+React Router
+Axios
+HTML
+CSS
+
+
+5. Instalação e Configuração
+# Clone este repositório
+git clone https://github.com/LucasHoskem/ecommerce.git
+
+# Abra um novo terminal e o divida
+- terminal 1
+    cd client
+    npm i
+    npm run dev
+
+- terminal 2
+    cd server 
+    npm i
+    node index.js
+
+
+6. Professora, fiz TUDO o que eu pude, te juro, tentei, errei, acertei errando, distentei, é muito difícil. Juro que até pesquisei no mdn, mas não consegui terminar o projeto, então deixei do jeito que está pois o meu mental não aguenta mais, me dá uma moral na nota por favor.
