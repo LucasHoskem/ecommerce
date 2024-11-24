@@ -8,7 +8,7 @@ function AppCatalogSearch() {
     const [filters, setFilters] = useState({
         search: '',
         category: 'Todos',
-        priceRange: [0, 100],
+        priceRange: [0, 100000],
         inStock: false,
     });
 
@@ -18,12 +18,12 @@ function AppCatalogSearch() {
 
     return (
         <div>
-            <div className='navbar1'>
-                <nav>
+            <div className='navbar-container'>
+                <nav className='navbar'>
                     <a href="/inicio">BEM-VINDO</a>
-                    <ul className="list">
-                        <li><a href="/profile">Perfil</a></li>
-                        <li><a href="/carrinho">Carrinho</a></li>
+                    <ul className="navbar-menu">
+                        <li className="navbar-item"><a href="/profile">Perfil</a></li>
+                        <li className="navbar-item"><a href="/carrinho">Carrinho</a></li>
                     </ul>
                     
                 </nav>

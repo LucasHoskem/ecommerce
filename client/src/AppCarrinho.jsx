@@ -30,6 +30,21 @@ function AppCarrinho() {
         setCart([]);
     };
 
+    const products = [
+        { name: "Smartphone X100", price: 1500, img: "https://via.placeholder.com/200?text=Smartphone+X100" },
+        { name: "Fone Bluetooth Pro", price: 300, img: "https://via.placeholder.com/200?text=Fone+Bluetooth+Pro" },
+        { name: "Notebook Ultra", price: 3500, img: "https://via.placeholder.com/200?text=Notebook+Ultra" },
+        { name: "Smartwatch Fit", price: 800, img: "https://via.placeholder.com/200?text=Smartwatch+Fit" },
+        { name: "Câmera Digital Z7", price: 2500, img: "https://via.placeholder.com/200?text=Camera+Digital+Z7" },
+        { name: "Monitor 4K Vision", price: 2000, img: "https://via.placeholder.com/200?text=Monitor+4K+Vision" },
+        { name: "Teclado Mecânico Pro", price: 400, img: "https://via.placeholder.com/200?text=Teclado+Mecanico+Pro" },
+        { name: "Mouse Gamer RX", price: 250, img: "https://via.placeholder.com/200?text=Mouse+Gamer+RX" },
+        { name: "Caixa de Som Wave", price: 600, img: "https://via.placeholder.com/200?text=Caixa+de+Som+Wave" },
+        { name: "HD Externo 1TB", price: 500, img: "https://via.placeholder.com/200?text=HD+Externo+1TB" },
+        { name: "Drone Phantom", price: 4500, img: "https://via.placeholder.com/200?text=Drone+Phantom" },
+        { name: "Console Gamer X", price: 2500, img: "https://via.placeholder.com/200?text=Console+Gamer+X" },
+      ];
+
     return (
         
         <div>
@@ -38,7 +53,6 @@ function AppCarrinho() {
                     <a href="/inicio">BEM-VINDO</a>
                     <ul className="navbar-menu">
                         <li className='navbar-item'><a href="/profile">Perfil</a></li>
-                        <li className='navbar-item'><a href="/carrinho">Carrinho</a></li>
                         <li className='navbar-item'><a href="/catalogo">Catalogo</a></li>
                     </ul>
                     

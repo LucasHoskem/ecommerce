@@ -437,3 +437,143 @@ body {
   background-color: #00bcd4;
   transform: scale(1.05);
 }
+
+/* Container geral dos filtros */
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Campo de busca */
+.filter-search {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filter-search:focus {
+  border-color: #0288d1;
+}
+
+/* Select de categorias */
+.filter-select {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:focus {
+  border-color: #0288d1;
+}
+
+/* Input de range */
+.filter-range {
+  flex: 1;
+  min-width: 150px;
+  outline: none;
+  accent-color: #0288d1;
+  cursor: pointer;
+}
+
+/* Checkbox */
+.filter-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.filter-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #0288d1;
+}
+
+
+/* Card de informações do produto */
+.product-info-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-info-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do produto */
+.product-info-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Preço do produto */
+.product-info-price {
+  font-size: 1.2rem;
+  color: #0288d1;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Estoque do produto */
+.product-info-stock {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-info-stock.in-stock {
+  color: #4caf50; /* Verde para "Em estoque" */
+}
+
+.product-info-stock.out-of-stock {
+  color: #f44336; /* Vermelho para "Fora de estoque" */
+}
+
+/* Botão de adicionar ao carrinho */
+.product-info-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none; /* Remove sublinhado do link */
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product-info-button:hover {
+  background-color: #0288d1;
+  transform: translateY(-2px);
+}
+
+.product-info-button:active {
+  transform: translateY(0);
+}
