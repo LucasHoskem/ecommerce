@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
+const fetchUserProfile = async () => {
+  try {
+    const response = await axios.get('http://localhost:5000/api/auth/me', {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem('token')}`,  // Passando o token nas requisições
+      },
+    });
+
+    console.log('Dados do usuário:', response.data);
+  } catch (error) {
+    console.error('Erro ao buscar dados do usuário:', error);
+  }
+};
+
 const Profile = () => {
   const [user, setUser] = useState(null);
 

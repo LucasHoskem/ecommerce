@@ -3,6 +3,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const router = express.Router();
+const authenticateToken = require('../middleware/authenticate');  // Middleware de autenticação
 
 // Rota para registrar um novo usuário
 router.post('/register', async (req, res) => {
@@ -79,6 +80,30 @@ const authMiddleware = (roles = []) => {
     });
   };
 };
+
+// Rota para obter os dados do usuário autenticado
+router.get('/me', authenticateToken, async (req, res) => {
+  try {
+    // A partir do token, obtemos o id do usuário
+    const user = await User.findByPk(req.user.id);  // `req.user.id` foi setado pelo middleware
+    
+    // Se não encontrar o usuário, retorna erro 404
+    if (!user) {
+      return res.status(404).json({ message: 'Usuário não encontrado' });
+    }
+
+    // Retorna os dados do usuário
+    res.json({
+      id: user.id,
+      username: user.username,
+      email: user.email,
+      role: user.role,  // Pode retornar outras informações, se necessário
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Erro ao buscar dados do usuário' });
+  }
+});
 
 
 // Exportar as rotas e o middleware (se necessário)
