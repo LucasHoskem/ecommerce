@@ -6,11 +6,6 @@ function Product({ product, addToCart }) {
 
 <div className="products-container">
   <div className="product-card">
-    <img
-      src={product.img}
-      alt={product.name}
-      className="product-image"
-    />
     <h3 className="product-title">{product.name}</h3>
     <p className="product-price">R$ {product.price},00</p>
     <button

@@ -31,22 +31,22 @@ function AppCarrinho() {
     };
 
     const products = [
-        { name: "Smartphone X100", price: 1500, img: "https://via.placeholder.com/200?text=Smartphone+X100" },
-        { name: "Fone Bluetooth Pro", price: 300, img: "https://via.placeholder.com/200?text=Fone+Bluetooth+Pro" },
-        { name: "Notebook Ultra", price: 3500, img: "https://via.placeholder.com/200?text=Notebook+Ultra" },
-        { name: "Smartwatch Fit", price: 800, img: "https://via.placeholder.com/200?text=Smartwatch+Fit" },
-        { name: "Câmera Digital Z7", price: 2500, img: "https://via.placeholder.com/200?text=Camera+Digital+Z7" },
-        { name: "Monitor 4K Vision", price: 2000, img: "https://via.placeholder.com/200?text=Monitor+4K+Vision" },
-        { name: "Teclado Mecânico Pro", price: 400, img: "https://via.placeholder.com/200?text=Teclado+Mecanico+Pro" },
-        { name: "Mouse Gamer RX", price: 250, img: "https://via.placeholder.com/200?text=Mouse+Gamer+RX" },
-        { name: "Caixa de Som Wave", price: 600, img: "https://via.placeholder.com/200?text=Caixa+de+Som+Wave" },
-        { name: "HD Externo 1TB", price: 500, img: "https://via.placeholder.com/200?text=HD+Externo+1TB" },
-        { name: "Drone Phantom", price: 4500, img: "https://via.placeholder.com/200?text=Drone+Phantom" },
-        { name: "Console Gamer X", price: 2500, img: "https://via.placeholder.com/200?text=Console+Gamer+X" },
-        { name: "Tablet Pro 10", price: 1800, img: "https://via.placeholder.com/200?text=Tablet+Pro+10" },
-        { name: "Carregador Rápido Turbo", price: 150, img: "https://via.placeholder.com/200?text=Carregador+Rapido+Turbo" },
-        { name: "Headset Gamer 7.1", price: 700, img: "https://via.placeholder.com/200?text=Headset+Gamer+7.1" },
-        { name: "Impressora Multifuncional X", price: 1200, img: "https://via.placeholder.com/200?text=Impressora+Multifuncional+X" },
+        { name: "Smartphone X100", price: 1500},
+        { name: "Fone Bluetooth Pro", price: 300},
+        { name: "Notebook Ultra", price: 3500},
+        { name: "Smartwatch Fit", price: 800},
+        { name: "Câmera Digital Z7", price: 2500},
+        { name: "Monitor 4K Vision", price: 2000},
+        { name: "Teclado Mecânico Pro", price: 400},
+        { name: "Mouse Gamer RX", price: 250},
+        { name: "Caixa de Som Wave", price: 600},
+        { name: "HD Externo 1TB", price: 500},
+        { name: "Drone Phantom", price: 4500},
+        { name: "Console Gamer X", price: 2500},
+        { name: "Tablet Pro 10", price: 1800},
+        { name: "Carregador Rápido Turbo", price: 150},
+        { name: "Headset Gamer 7.1", price: 700},
+        { name: "Impressora Multifuncional X", price: 1200},
       ];
 
     return (

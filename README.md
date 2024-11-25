@@ -40,3 +40,7 @@ git clone https://github.com/LucasHoskem/ecommerce.git
 
 7. link vercel
 https://ecommerce-z4y4.vercel.app
+
+8. login admin:
+admin@gmail.com
+senha: 123

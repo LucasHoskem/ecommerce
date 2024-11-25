@@ -33,15 +33,15 @@ const HomeLogged = () => {
   return (
     <>
       <div className='navbar-container'>
-          <nav className='navbar'>
-              <a href="/inicio">BEM-VINDO</a>
-              <ul className="navbar-menu">
-                  <li className='navbar-item'><Link to="/profile">Perfil</Link></li>
-                  <li className='navbar-item'><Link to="/carrinho">Carrinho</Link></li>
-                  <li className='navbar-item'><Link to="/catalogo">menu</Link></li>
-              </ul>
-          </nav>
-        </div>
+        <nav className='navbar'>
+            <a href="/inicio">BEM-VINDO</a>
+            <ul className="navbar-menu">
+                <li className='navbar-item'><Link to="/profile">Perfil</Link></li>
+                <li className='navbar-item'><Link to="/carrinho">Carrinho</Link></li>
+                <li className='navbar-item'><Link to="/catalogo">menu</Link></li>
+            </ul>
+        </nav>
+      </div>
       <div className="products-container">
         {products.map((product, index) => (
           <div className="product-card" key={index}>

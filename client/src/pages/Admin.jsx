@@ -24,23 +24,35 @@ const Admin = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className='panel'>
-      <h1>Painel de Administração</h1>
-      <h2>Gerenciar Usuários</h2>
-      {userData && userData.length > 0 ? (
-        userData.map(user => (
-          <div key={user.id}>
-            <h3>{user.username}</h3>
-            <p>{user.email}</p>
-            <button onClick={() => console.log('Deletar', user.id)}>Deletar</button>
-            <button onClick={() => console.log('Editar', user)}>Editar</button>
-          </div>
-        ))
-      ) : (
-        <p>Nenhum usuário encontrado.</p>
-      )}
-      <button onClick={() => console.log('Adicionar usuário')}>Adicionar Usuários</button>
-    </div>
+    <>
+      <div className='navbar-container'>
+        <nav className='navbar'>
+            <a href="/inicio">BEM-VINDO</a>
+            <ul className="navbar-menu">
+                <li className='navbar-item'><Link to="/profile">Perfil</Link></li>
+                <li className='navbar-item'><Link to="/carrinho">Carrinho</Link></li>
+                <li className='navbar-item'><Link to="/catalogo">menu</Link></li>
+            </ul>
+        </nav>
+      </div>
+      <div className='panel'>
+        <h1>Painel de Administração</h1>
+        <h2>Gerenciar Usuários</h2>
+        {userData && userData.length > 0 ? (
+          userData.map(user => (
+            <div key={user.id}>
+              <h3>{user.username}</h3>
+              <p>{user.email}</p>
+              <button onClick={() => console.log('Deletar', user.id)}>Deletar</button>
+              <button onClick={() => console.log('Editar', user)}>Editar</button>
+            </div>
+          ))
+        ) : (
+          <p>Nenhum usuário encontrado.</p>
+        )}
+        <button onClick={() => console.log('Adicionar usuário')}>Adicionar Usuários</button>
+      </div>
+    </>
   );
 };
 

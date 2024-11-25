@@ -75,21 +75,6 @@ const Register = () => {
               required
             />
           </div>
-          <div className='form-group'>
-            <label htmlFor="role" className='form-label'>Tipo:</label>
-            <select
-              name="select"
-              id="role"
-              className='form-select'
-              onChange={(e) => setRole(e.target.value)}
-              value={role}
-              required
-            >
-              <option value="">Selecione...</option>
-              <option value="user">Usuário</option>
-              <option value="admin">Admin</option>
-            </select>
-          </div>
           {error && <p className='form-error'>{error}</p>}
           <button className='btn-register' type="submit">Cadastrar</button>
         </form>
