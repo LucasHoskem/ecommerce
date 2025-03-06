@@ -7,8 +7,6 @@ import Admin from './pages/Admin';
 import Login from './pages/Login';
 import Register from './pages/Register'; // Importando o componente Register
 import PrivateRoute from './components/PrivateRoute';
-import AppCarrinho from './AppCarrinho';
-import AppCatalogSearch from './AppCatalogSearch';
 
 const App = () => {
   return (
@@ -21,8 +19,6 @@ const App = () => {
       <Route element={<PrivateRoute roles={['user', 'admin']} />}>
         <Route path="/profile" element={<Profile />} />
         <Route path="/inicio" element={<HomeLogged />} />
-        <Route path="/carrinho" element={<AppCarrinho /> } />
-        <Route path="/catalogo" element={<AppCatalogSearch />} />
       </Route>
 
       <Route element={<PrivateRoute roles={['admin']} />}>
