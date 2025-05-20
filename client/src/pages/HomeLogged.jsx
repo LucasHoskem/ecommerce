@@ -9,17 +9,6 @@ const HomeLogged = () => {
     console.log(`Adicionando ao carrinho: ${product.name}`);
     navigate('/carrinho'); // Redireciona para a página do carrinho
   }
-  const estiloTabela = {
-    width: '80%', // A tabela ocupará 80% da largura da tela
-    margin: '0 auto', // Centraliza a tabela na tela
-    borderCollapse: 'collapse', // Estilo de borda
-  };
-
-  const estiloCelula = {
-    padding: '8px',
-    border: '1px solid black',
-    textAlign: 'center',
-  };
 
 
   const products = [
@@ -32,37 +21,30 @@ const HomeLogged = () => {
             <a href="/inicio">BEM-VINDO</a>
             <ul className="navbar-menu">
                 <li className='navbar-item'><Link to="/profile">Perfil</Link></li>
+                <li className='navbar-item'><Link to="/carrinho">Carrinho</Link></li>
+                <li className='navbar-item'><Link to="/catalogo">menu</Link></li>
             </ul>
         </nav>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-      <table style={estiloTabela}>
-        <thead>
-          <tr>
-            <th style={estiloCelula}>Nome</th>
-            <th style={estiloCelula}>Idade</th>
-            <th style={estiloCelula}>Cidade</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style={estiloCelula}>João</td>
-            <td style={estiloCelula}>25</td>
-            <td style={estiloCelula}>São Paulo</td>
-          </tr>
-          <tr>
-            <td style={estiloCelula}>Maria</td>
-            <td style={estiloCelula}>30</td>
-            <td style={estiloCelula}>Rio de Janeiro</td>
-          </tr>
-          <tr>
-            <td style={estiloCelula}>Pedro</td>
-            <td style={estiloCelula}>22</td>
-            <td style={estiloCelula}>Belo Horizonte</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <div className="products-container">
+        {products.map((product, index) => (
+          <div className="product-card" key={index}>
+            <img
+              src={product.img}
+              alt={product.name}
+              className="product-image"
+            />
+            <h3 className="product-title">{product.name}</h3>
+            <p className="product-price">R$ {product.price},00</p>
+            <button
+              className="product-button"
+              onClick={() => handleBuy(product)}
+            >
+              Comprar
+            </button>
+          </div>
+        ))}
+      </div>
     </>
   );
 };
